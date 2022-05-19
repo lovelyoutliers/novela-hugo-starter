@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: false
-  label: Name
+  label: Jen Dykxhoorn
 - name: bio
   type: textarea
   default: ''
@@ -16,11 +16,16 @@ fields:
     schema:
       format: markdown
   label: Bio
+  description: 'Dr Jen Dykxhoorn (she/her) is a psychiatric epidemiologist. '
 - name: avatar
   type: file
   config:
-    maxSize: 250
-  label: Avatar Image
+    maxSize: 
+  label: Photo - Jen Dykxhoorn
+  default: "/images/thumbnail.jpeg"
+  showOnly:
+    field: featured
+    value: false
 - name: social
   type: field_group_list
   fields:
@@ -28,7 +33,7 @@ fields:
     type: text
     config:
       required: false
-    label: Title
+    label: Twitter
   - name: url
     type: text
     config:
